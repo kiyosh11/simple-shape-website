@@ -1,3 +1,4 @@
+# Simple Shape Website 
 
 Welcome to the Shape Website repository! This project houses the front-end code for a user-friendly and easily editable code that showcases the capabilities and features of your shape.
 
@@ -15,7 +16,7 @@ Host or use vercel
 Installation
 Clone the repository or download it:
 
-Navigate to index.html.
+Navigate to `index.html`.
 
 Edit the content.
 
@@ -24,7 +25,7 @@ Publish the edited website.
 Editing the Website
 To edit the website's content:
 
-Open the index.html file.
+Open the `index.html` file.
 Modify the code to match your shapes information, command list, and other details.
 Save the changes and publish.
 Contributing
@@ -36,9 +37,9 @@ Distributed under the MIT License. See LICENSE for more information.
 Contact
 Discord:
 
-_kiyosh1
+- _kiyosh1
 
-kesku
+- kesku
 
 Project Link: 
 
