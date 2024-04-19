@@ -41,6 +41,6 @@ Discord:
 
 - kesku
 
-Project Link: 
+Project Link: https://kiyosh11.github.io/simple-shape-website
 
  
