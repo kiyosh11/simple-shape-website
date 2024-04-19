@@ -1,0 +1,295 @@
+/* Resetting default margin, padding, and font */
+body, html {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10%;
+    position: relative;
+    z-index: 10;
+}
+
+/* Styling for the hamburger menu icon */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 21px;
+    cursor: pointer;
+}
+
+/* Styling for the bars in the hamburger menu icon */
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    transition: all 0.3s ease;
+}
+
+.bar, .bar:before, .bar:after {
+    content: '';
+    display: block;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 10px; 
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    border: none;
+    border-radius: 5px;
+    background-color: #353536;
+    color: white;
+    transition: background-color  0.3s ease;
+}
+
+/* Styling for the close button in the navigation */
+.close {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 11;
+}
+
+/* Styling for the heading in the navigation bar */
+.navbar h1 {
+    font-size: 20px;
+    background: -webkit-linear-gradient(left, #264653, #f67280);
+    background: linear-gradient(to right, #264653, #f67280);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* Styling for the introductory section */
+.intro {
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* Styling for the neon sign text */
+.neon-sign {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    background: -webkit-linear-gradient(left, #264653, #f67280);
+    background: linear-gradient(to right, #264653, #f67280);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=montserrat:wght@700&display=swap');
+
+/* Styling for the introduction section */
+.introduction {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FF161B1D;
+}
+
+.introduction-text, .shapesy-essence, .tech-welcome, .sub-greeting, .explore-world p {
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    margin: 20px auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.intro-heading, .blend-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #f67280;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.blend-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(left, #ff8a80, #8a9fff);
+    background: linear-gradient(to right, #ff8a80, #8a9fff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    margin-top: 30px;
+}
+
+.image-container img {
+    display: block;
+    max-width: 90%;
+    border-radius: 10px;
+    text-align: center; 
+    display: inline-block;
+    height: auto;
+}
+
+.text-below-image {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for Shapesy's Chatbot Shapes and Capabilities Section */
+.shapesy-chatbots,
+.shapesy-capabilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(33.333% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #333;
+}
+
+.shapesy-capabilities h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.capability-communication { background-color: #E3F2FD; }
+.capability-assistance { background-color: #FFFDE7; }
+.capability-learning { background-color: #E8F5E9; }
+.capability-emotional { background-color: #FCE4EC; }
+.capability-entertainment { background-color: #EDE7F6; }
+
+@media (max-width: 960px) {
+    .card { flex-basis: calc(50% - 40px); }
+}
+
+@media (max-width: 600px) {
+    .card { flex-basis: 100%; }
+}
+
+/* Styling for the introductory image */
+.intro img {
+    width: 300px;
+    border-radius: 15px;
+    transition: opacity 1s ease;
+}
+
+/* Styling for the support card */
+.support-card {
+    background-color: #8a9fff;
+    cursor: pointer;
+    padding: 40px;
+    font-size: 1.2em;
+    border: none;
+}
+
+.support-card p {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.support-card h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.support-card:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the image container */
+.image-container-2 {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #FF161B1D;
+}
+
+/* Styling for responsive images */
+.responsive-image {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
